@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url(../Fonts/Rubik/static/Rubik-Regular.ttf);
+}
+@font-face {
+    font-family: 'Exo';
+    src: url(../Fonts/Exo/static/Exo2-Regular.ttf);
+}
+/* ---------------------------------------- */
+/* Nav */
+.nav {
+    position: sticky;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 70px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 7px 25px #1234564b;
+}
+.nav p {
+    font-family: 'Exo', Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: #123;
+}
+.frame-add {
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Exo', Arial, Helvetica, sans-serif;
+    font-size: 72px;
+    cursor: pointer;
+    transition: 0.2s 0s linear;
+}
+.frame-add:hover {
+    background-color: #11223321;
+}
+.frame-add:active {
+    border-radius: 8px;
+    scale: 0.9;
+}
+/* ---------------------------------------- */
+/* Frames */
+.frames-box {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.frame-link {
+    width: 288px;
+    height: 200px;
+    color: #123;
+    font-family: 'Exo', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 0px;
+}
+.frame-link p {
+    margin: 0;
+    transition: 0.2s 0s linear;
+}
+.frame-link p:hover {
+    scale: 1.2;
+}
+.frame {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}

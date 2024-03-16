@@ -1,0 +1,55 @@
+.loading {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #123;
+}
+.loading-box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.color {
+    background-color: #124;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    animation: circle-down 0.8s infinite linear;
+}
+
+@keyframes circle-down {
+    0% {
+        top: 45%;
+        background-color: #3395ff;
+    }
+    25% {
+        top: 50%;
+        background-color: #ec3f79;
+    }
+    50% {
+        top: 55%;
+    }
+    75% {
+        top: 50%;
+        background-color: #ec3f79;
+    }
+    100% {
+        top: 45%;
+        background-color: #3395ff;
+    }
+}
